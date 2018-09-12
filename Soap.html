@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+
+<title>Gentle Black Sugar Charcoal Soap</title>
+</head>
+<body>
+
+        <div id="logo"><a href="Index.html"><img src="img/KlairsLogo.png" alt="Klairs'_Logo"></a></div>
+        
+<div class="topnav" id="myTopnav">
+        <a href="Index.html">Home</a>
+        <a href="Skincare.html">Skincare</a>
+        <a href="Makeup.html">Makeup</a>
+        <a href="Body.html">Body</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Order</a>
+  <a href="javascript:void(0);" class="icon" onclick="tinyNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    
+<div class="main" style="padding-bottom: 1em">
+        <h1><i>Gentle Black Sugar Charcoal Soap</i></h1>
+<div class="slides">
+  <img class="mySlides" alt="charcoal soap" src="img/Body/soap.jpg">
+  <img class="mySlides" alt="charcoal soap" src="img/Body/soapPackaged.jpg">
+  <img class="mySlides" alt="charcoal soap" src="img/Body/soapWet.jpg">
+
+  <div>
+    <div class="thumb">
+      <img src="img/Body/soap.jpg" alt="charcoal soap" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="thumb">
+      <img src="img/Body/soapPackaged.jpg" alt="charcoal soap" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="thumb">
+      <img src="img/Body/soapWet.jpg" alt="charcoal soap" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+    <div class="description">
+        <h2>The First Step in Pore Care</h2>
+        
+        <p>KLAIRS’s soap series are made by master craftsmen who have produced soap for more than 20 years. Delicately selected natural ingredients have been matured for long periods of time at a low temperature to create this soap. For your benefit, artificial ingredients such as surfactants, hardener, preservatives or fragrance were not used. Natural glycerin from the production stage is contained within the soap to maximize hydration effects.</p>
+<p>Dense black bubbles are created when lathering the Gentle Black Sugar Charcoal Soap between palms. The charcoal eliminates dead skin cells, and organic Ghassoul from Morocco draws sebum out of the skin. Experience the feeling of purified pores along with a more brightened and even skin tone!
+</p>
+        
+        <h5>Volume: 100g
+            <br/>
+        All Skin Types<br/>
+        Made in Korea
+        </h5>
+        
+        <div id="qty"><p id="itemPrice">$12.90</p><form onsubmit="window.alert('Added Gentle Black Sugar Charcoal Soap to cart.')"><input type="submit" value="Add to Cart"></form>
+        </div>
+    </div>
+   </div>
+    
+<div class="productsBottom">
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <p>
+Water, Sodium Hydroxide, Coconut Oil, Palm Oil, Sunfulower Oil, Jojoba Oil, Castor Oil, Olive Oil, Theobroma Cacao(Cocoa)Seed Butter , Grapeseed Oil, Black Strap Powder , Dl-ΑTocoperol, Volanic Ash, Ghassoul, Charcoal, Lavender Oil, Eucalyptus Oil
+        </p>
+    </div>
+        
+    <div class="Features_HowTo" >
+        <h2>Features</h2>
+        <ul>
+            <li><b>Black Sugar</b><br>Sugar contains glycolic acid that is crucial to maintain the healthy skin. Especially the black sugar helps exfoliate away dead skin cells for softness and clarity with its large particles.</li>
+            <li><b>Moisturize skin after pore care</b><br>
+            Gentle Black Sugar Charcoal Soap contains pine oil and black sugar for skin soothing and hydration.
+            Leaving the skin well moisturized even after cleansing. When used with the Gentle Black series,
+            it is a great daily cleansing experience for oily skin while effectively cleansing the pores and clearing
+            away dead skin cells. </li>
+        </ul>
+        
+        <h2>How to Use</h2>
+        <p>Lather the soap between palms with tepid water. Massage the bubble over body and rinse it off.</p>
+    </div>   
+</div>
+
+    <footer>  
+        <p>Klairs co. (1230 Imaginary St., Anytown, OX 50918) <br/>
+            © 2018 Dear, Klairs. All rights reserved.</p>
+        <p>Website created by Emily Chan</p>
+    </footer>   
+ 
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("myTopnav");
+
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

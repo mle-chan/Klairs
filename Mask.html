@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+<title>Rich Moist Soothing Tencel Sheet Mask</title>
+</head>
+<body>
+
+        <div id="logo"><a href="Index.html"><img src="img/KlairsLogo.png" alt="Klairs'_Logo"></a></div>
+        
+<div class="topnav" id="myTopnav">
+        <a href="Index.html">Home</a>
+        <a href="Skincare.html">Skincare</a>
+        <a href="Makeup.html">Makeup</a>
+        <a href="Body.html">Body</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Order</a>
+  <a href="javascript:void(0);" class="icon" onclick="tinyNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    
+<div class="main" style="padding-bottom: 1em">
+        <h1><i>Rich Moist Soothing Tencel Sheet Mask</i></h1>
+<div class="slides">
+  <img class="mySlides" src="img/Skincare/moisturizing-face-mask-klairs1.jpg">
+  <img class="mySlides" src="img/Skincare/moisturizing-face-mask-klairs2.jpg">
+  <img class="mySlides" src="img/Skincare/moisturizing-face-mask-klairs3.jpg">
+
+  <div>
+    <div class="thumb">
+      <img src="img/Skincare/moisturizing-face-mask-klairs1.jpg" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="thumb">
+      <img src="img/Skincare/moisturizing-face-mask-klairs2.jpg" style="width:100%" onclick="currentDiv(2)">
+    </div>
+    <div class="thumb">
+      <img src="img/Skincare/moisturizing-face-mask-klairs3.jpg" style="width:100%" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
+
+    <div class="description">
+        <h2>Moisturize and Balance the Skin</h2>
+        
+        <p>Like it’s name, the Rich Moist Soothing Tencel Sheet Mask soothes sensitive, irritated, and inflamed skin. Containing an abundant amount of soothing, moisturizing, and skin-barrier repairing ingredients, the sheet mask is guaranteed to be a solution for those are experiencing dryness, redness, or irritation.</p>
+
+        <p>The Rich Moist Soothing Tencel Sheet mask contains Aloe Barbadensis Leaf Juice which is known to be an effective ingredient to soothe irritated sensitive skin. It is also packed full of various ceramides as well as centella asiatica to repair the skin’s barrier. This hypoallergenic sheet mask is made up of a double layered tencel gauze mask to ensure to fit into all face shape with comfort.</p>
+
+        
+        <h5>Volume : 25ml<br/>
+        All Skin Types<br/>
+        Made in Korea
+        </h5>
+        
+        <div id="qty"><p id="itemPrice">$2.85</p><form onsubmit="window.alert('Added Rich Moist Soothing Tencel Sheet Mask to cart.')"><input type="submit" value="Add to Cart"></form>
+        </div>
+    </div>
+   </div>
+    
+<div class="productsBottom">
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <p>
+        Water, Butylene glycol, glycerin, 1,2-hexanediol, Aloe Barbadensis Leaf Juice, Glycereth-26, Propanediol, Dipotassium Glycyrrhizate, Panthenol, Betaine, Allantoin, Cellulose, Hydroxyethyl cellulose, Sodium hyaluronate,
+Centella Asiatica Extract, 
+Hydrogenated lecithin, Ceramide NP, Ceramide NS, Ceramide AP, Ceramide AS, Ceramide EOP, Phytosphingosine, Cholesterol, Cetearyl Alcohol, Stearic Acid, Carbomer, Arginine, Disodium EDTA, Sodium Acetate, PVM/MA Copolymer, Polyglyceryl-10 Laurate, Glyceryl Acrylate/ Acrylic Acid Copolymer, Ethylhexylglycerin
+        </p>
+    </div>
+        
+    <div class="Features_HowTo" >
+        <h2>Features</h2>
+        <ul>
+            <li><b>Strengthen the skin barrier to areas with irritation</b><br>The soothing sheet mask contains 5 types of ceramide, which are the constituents of the skin. This helps strengthen weakened skin barriers.</li>
+            <li><b>Mask full of moisturizing nutrients</b><br>The Rich Moist Soothing Tencel Mask is formulated with Aloe Vera, Panthenol, Hyaluronic Acid and high concentration of various moisturizing ingredients to add energy and moisture to dry and exhausted skin. </li>
+            <li><b>Healing Gauze Sheet</b><br>As the Healing Gauze sheet is doubled with 100% cotton and tencel fabric, it is designed to minimize skin irritation. The thin and flexible feature of the sheet mask allows it to comfortably adhere onto curved skin, and help the essence absorb well.</li>
+        </ul>
+        
+        <h2>How to Use</h2>
+        <p>Before opening, rub lightly for the sheet and liquid to mix well. After cleansing, place the sheet on clean/toned skin. Wait 15-20 minutes, and gently remove the mask. Tap lightly to let the essence fully absorb.</p>
+    </div>   
+</div>
+
+    <footer>  
+        <p>Klairs co. (1230 Imaginary St., Anytown, OX 50918) <br/>
+            © 2018 Dear, Klairs. All rights reserved.</p>
+        <p>Website created by Emily Chan</p>
+    </footer>   
+ 
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("myTopnav");
+
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

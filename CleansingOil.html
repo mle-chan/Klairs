@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+<title>Gentle Black Deep Cleansing Oil</title>
+</head>
+<body>
+        <div id="logo"><a href="Index.html"><img src="img/KlairsLogo.png" alt="Klairs'_Logo"></a></div>
+        
+<div class="topnav" id="myTopnav">
+        <a href="Index.html">Home</a>
+        <a href="Skincare.html">Skincare</a>
+        <a href="Makeup.html">Makeup</a>
+        <a href="Body.html">Body</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Order</a>
+  <a href="javascript:void(0);" class="icon" onclick="tinyNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    
+<div class="main" style="padding-bottom: 1em">
+        <h1><i>Gentle Black Deep Cleansing Oil</i></h1>
+<div class="slides">
+  <img class="mySlides" alt="black oil" src="img/Makeup/gentle-black-deep-cleansing-oil-klairs.jpg">
+  <img class="mySlides" alt="black oil" src="img/Makeup/oil-slide-2.jpg">
+
+  <div>
+    <div class="thumb">
+      <img src="img/Makeup/gentle-black-deep-cleansing-oil-klairs.jpg" alt="black oil" style="width:100%" onclick="currentDiv(1)">
+    </div>
+    <div class="thumb">
+      <img src="img/Makeup/oil-slide-2.jpg" alt="black oil" style="width:100%" onclick="currentDiv(2)">
+    </div>
+  </div>
+</div>
+
+    <div class="description">
+        <h2>The Miracle of Black Cleansing Oil From Nature!</h2>
+        
+        <p>The Klairs Gentle Black Deep Cleansing Oil is composed of various vegetable oils helpful for skin care. It’s easily washable texture allows mild yet effective cleansing of dirt and makeup without causing irritation and is the best cleanser to maintain the skin’s moisture even after cleansing.</p>
+        
+        <p>The Gentle Black Deep Cleansing Oil is formulated with natural oils extracted from black bean to control sebum production and soothe skin. Black sesame oil provides antioxidants and black currant seed oil provides minerals and vitamins. It’s the best hypo-allergenic formula for sensitive skin.</p>
+
+        <h5>Volume : 150ml<br/>
+        All Skin Types<br/>
+        Made in Korea
+        </h5>
+        
+        <div id="qty"><p id="itemPrice">$22.90</p><form onsubmit="window.alert('Added Gentle Black Deep Cleansing Oil to cart.')"><input type="submit" value="Add to Cart"></form>
+        </div>
+    </div>
+   </div>
+    
+<div class="productsBottom">
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <p>
+        Caprylic/Capric Triglyceride, Cetyl Ethylhexanoate, Isononyl Isononanoate, PEG-7 Glyceryl Cocoate , Isopropyl Myristate, Simmondsia Chinensis (Jojoba) Seed Oil, Glycine Soja (Soybean) Oil, Sesamum Indicum (Sesame) Seed Oil , Ribes Nigrum (Black Currant) Seed Oil , Tocopheryl Acetate , PEG-20 Glyceryl Triisostearate , Polysorbate 20, Fragrance, Butyrospermum Parkii (Shea Butter) , Carapa Guaianensis Seed Oil, Vaccinium Macrocarpon (Cranberry) Seed Oil
+        </p>
+    </div>
+        
+    <div class="Features_HowTo" >
+        <h2>Features</h2>
+        <ul>
+            <li><b>Black Bean Oil</b><br>
+            Black bean helps to control the sebum production, increases the skin elasticity and provides a soothing effect</li>
+
+            <li><b>Black Sesame Oil</b><br>
+            Black sesame prevents dehydration and skin aging while providing powerful antioxidant effects through various useful components such as Beta-carotene, Rinolenic acid, Sesamin, Sesaminol and Tocopherol.</li>
+
+            <li><b>Black Currant Seed Oil</b><br>
+            Black Current Seed Oil strengthens the skins protective layer to prevent the evaporation of moisture from the skin. It promotes skin cell regeneration and provides antioxidant effects by containing various minerals.</li>
+        </ul>
+        
+        <h2>How to Use</h2>
+        <p>Take an adequate amount of Gentle Black Deep Cleansing Oil onto the palms of dry hands.
+        Gently massage over dry face in order of forehead, nose and cheeks. After massaging, do not wipe off with tissue but rinse off with lukewarm water for 2~3 times.</p>
+    </div>   
+</div>
+
+    <footer>  
+        <p>Klairs co. (1230 Imaginary St., Anytown, OX 50918) <br/>
+            © 2018 Dear, Klairs. All rights reserved.</p>
+        <p>Website created by Emily Chan</p>
+    </footer>   
+ 
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("myTopnav");
+
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

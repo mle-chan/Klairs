@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+<title>Supple Preparation All-Over Lotion</title>
+</head>
+<body>
+
+        <div id="logo"><a href="Index.html"><img src="img/KlairsLogo.png" alt="Klairs'_Logo"></a></div>
+        
+<div class="topnav" id="myTopnav">
+        <a href="Index.html">Home</a>
+        <a href="Skincare.html">Skincare</a>
+        <a href="Makeup.html">Makeup</a>
+        <a href="Body.html">Body</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Order</a>
+  <a href="javascript:void(0);" class="icon" onclick="tinyNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    
+<div class="main" style="padding-bottom: 1em">
+        <h1><i>Supple Preparation All-Over Lotion</i></h1>
+<div class="slides">
+  <img class="mySlides" alt="all over lotion" src="img/Body/supple-preparation-all-over-lotion-klairs.jpg">
+</div>
+
+    <div class="description">
+        <h2>When hydration is needed all-over</h2>
+        <p>Introducing the one product that will take care of all your moisturizing needs.</p>
+        <p>Use freely anywhere on the face and body wherever moisture is needed. With a generous capacity for various applications, you can use ample amounts as needed anywhere on dry areas.</p>
+        <h2>Immediate moisture, comfortable wear</h2>
+        <p>The All-Over Lotion is absorbed quickly without the stickiness. It’s useable all throughout the year, on any part, in any season, thanks to its smooth, light finish, full of hydration.</p>
+
+        <h5>Volume : 250ml<br/>
+        All Skin Types<br/>
+        Made in Korea
+        </h5>
+        
+        <div id="qty"><p id="itemPrice">$26.50</p><form onsubmit="window.alert('Added Supple Preparation All-Over Lotion to cart.')"><input type="submit" value="Add to Cart"></form>
+        </div>
+    </div>
+   </div>
+    
+<div class="productsBottom">
+    <div class="ingredients">
+        <h2>Ingredients</h2>
+        <p>
+        Water, Glycerin, Caprylic/Capric Triglyceride, Sodium Hyaluronate, Butyrospermum Parkii (Shea Butter), Cetyl Ethylhexanoate, Simmondsia Chinensis (Jojoba) Seed Oil, Glyceryl Stearate, Sorbitan Stearate, Cetyl Alcohol, Stearic Acid, Beta-Glucan, Sorbitan Sesquioleate, Microcrystalline Wax, Cyclopentasiloxane, Betaine, Ceramide NP, Polyquaternium-51, PEG-100 Stearate, Illicium Verum(Anise) Fruit Extract, Citrus Paradisi(Grapefruit) Fruit Extract, Nelumbium Speciosum Flower Extract, Paeonia Suffruticosa Root Extract, Scutellaria Baicalensis Root Extract, Dimethicone, Tocopheryl Acetate, Chlorphenesin, Carbomer, Arginine, Citric Acid, Ethylhexylglycerin, Portulaca Oleracea Extract, Althaea Rosea Flower Extract, Aloe Barbadensis Leaf Extract, Apium Graveolens (Celery) Extract, Brassica Oleracea Capitata (Cabbage) Leaf Extract, Brassica Oleracea Italica (Broccoli) Extract, Brassica Rapa (Turnip) Leaf Extract, Daucus Carota Sativa (Carrot) Root Extract, Oryza Sativa (Rice) Bran Extract, Solanum Lycopersicum (Tomato) Fruit/Leaf/Stem Extract, Natto Gum, Centella Asiatica Extract, Disodium EDTA, Lysine HCL, Proline, Sodium Ascorbyl Phosphate, Acetyl Methionine, Theanine
+        </p>
+    </div>
+        
+    <div class="Features_HowTo" >
+        <h2>Features</h2>
+        <ul>
+            <li><b>Key moisture elements</b><br>The All-over Lotion includes the same amount of moisturizing agent such as beta-glucan, hyaluronic acid, and Polyquaternium-51 as the Rich Soothing Cream. </li>
+            <li><b>A lotion for the face and body</b><br>Use freely anywhere on the body wherever moisturizing is needed. The All-Over Lotion is absorbed quickly without the stickiness. It’s useable all throughout the year, on any part, in any season, thanks to its smooth, light finish, full of hydration. With a generous capacity for various applications, you can use ample amounts as needed anywhere on dry areas.</li>
+        </ul>
+        
+        <h2>How to Use</h2>
+        <p>Apply to a dry area and gently tap to help absorption. Applicable anywhere on the skin, including the face, body and hair.</p>
+    </div>   
+</div>
+
+    <footer>  
+        <p>Klairs co. (1230 Imaginary St., Anytown, OX 50918) <br/>
+            © 2018 Dear, Klairs. All rights reserved.</p>
+        <p>Website created by Emily Chan</p>
+    </footer>   
+ 
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+window.onscroll = function() {stickyNav()};
+
+var navbar = document.getElementById("myTopnav");
+
+var sticky = navbar.offsetTop;
+
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+    
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

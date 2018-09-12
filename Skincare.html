@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<link type="text/css" rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
+
+<title>Skincare</title>
+</head>
+    
+<body>
+
+        <div id="logo"><a href="Index.html"><img src="img/KlairsLogo.png" alt="Klairs'_Logo"></a></div>
+
+<div class="topnav" id="myTopnav">
+        <a href="Index.html">Home</a>
+        <a href="Skincare.html">Skincare</a>
+        <a href="Makeup.html">Makeup</a>
+        <a href="Body.html">Body</a>
+        <a href="About.html">About</a>
+        <a href="Order.html">Order</a>
+  <a href="javascript:void(0);" class="icon" onclick="tinyNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+    
+<div class="main">
+
+    <h1><i>Skincare</i></h1>
+
+<section id="products">
+    <div>
+            <p>We believe in a simplistic approach to skin care. Designed specifically for sensitive skin, Klairs includes only the most essential ingredients in their products to promote healthier, stronger skin.</p>
+   <div><a href="SoothingCream.html"><img src="img/Skincare/klairs-rich-moist-soothing-cream.jpg" alt="Klairs rich moist soothing cream"></a>
+    <h4>Rich Moist Soothing Cream</h4>
+    $24.50</div>
+        <div><a href="Mask.html"><img src="img/Skincare/moisturizing-face-mask-klairs1.jpg" alt="Klairs Rich Moist Soothing Tencel Sheet Mask"></a>
+        <h4>Rich Moist Soothing Tencel Sheet Mask</h4>
+    $2.85</div>
+    </div>
+</section>
+    
+
+
+    
+    
+    <footer>
+        <div class="foot_left">
+            <p>Klairs co. (1230 Imaginary St., Anytown, OX 50918) <br/>
+                © 2018 Dear, Klairs. All rights reserved.</p>
+        </div>
+        
+        <div class="foot_right"><p>Website created by Emily Chan</p></div>
+    </footer>    
+</div>
+
+<script>
+function tinyNav() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+    
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {stickyNav()};
+
+// Get the navbar
+var navbar = document.getElementById("myTopnav");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickyNav() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+</script>
+
+</body>
+</html>
